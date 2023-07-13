@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout 
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:admobsdk="http://schemas.android.com/apk/res/com.maulinpathare.solitaire"
-	android:orientation="vertical" 
-	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 	<TextView 
 		android:text="@string/appName" 
 		android:textSize="30px" 
-		android:layout_width="fill_parent" 
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
  		android:height="35px"
 		android:layout_weight="1" 
@@ -17,7 +17,7 @@
 		android:text="Press the menu button to start" 
 		android:textSize="15px"
 		android:height="20px" 
-		android:layout_width="fill_parent" 
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight="0" 
 		android:gravity="center"/>
@@ -25,14 +25,14 @@
 		android:text="This game will play in landscape mode" 
 		android:textSize="15px"
 		android:height="20px" 
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content" 
 		android:layout_weight="0" 
 		android:gravity="center"/>		
 	<TextView 
 		android:text="@string/companyName" 
 		android:textSize="12px" 
-		android:layout_width="fill_parent" 
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
  		android:height="12px"
 		android:layout_weight="1" 
@@ -46,9 +46,9 @@
           android:layout_width="fill_parent" 
           android:layout_height="wrap_content"
           android:layout_alignParentBottom="true"
-          admobsdk:backgroundColor="#000000"
-          admobsdk:textColor="#FFFFFF"
-          admobsdk:keywords="android games ringtones wallpapers"
+			app:backgroundColor="#000000"
+			app:textColor="#FFFFFF"
+			app:keywords="android games ringtones wallpapers"
         />
         <!-- We could append app:testing="true" above to always get the test ad back -->
 </LinearLayout>
